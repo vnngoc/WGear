@@ -1,0 +1,227 @@
+/* Nền gradient + căn giữa */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #b40606, #8e44ad);
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hộp đăng nhập */
+.login-box {
+    background: #fff;
+    padding: 40px 25px;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Tiêu đề */
+.login-box h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input */
+.login-box input {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.login-box input:focus {
+    border-color: #8e44ad;
+    box-shadow: 0 0 6px rgba(142, 68, 173, 0.4);
+    outline: none;
+}
+
+/* Nút đăng nhập */
+.login-box button {
+    width: 80%;
+    padding: 12px;
+    margin: 20px 0;
+    background: linear-gradient(135deg, #8e44ad, #b40606);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+.login-box button:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+/* Tùy chọn Remember me + Forgot password */
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+
+.login-options label {
+    display: flex;
+    align-items: right;
+    gap: 3px;
+    color: #555;
+}
+
+.login-options label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #555;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Tùy chỉnh checkbox */
+.login-options input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #8e44ad; /* màu tím chủ đạo */
+    cursor: pointer;
+    margin: 0;
+}
+
+.forgot-link {
+    color: #8e44ad;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Link đăng ký */
+.login-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+.login-box a {
+    color: #8e44ad;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+/* Thông báo lỗi */
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Hiệu ứng xuất hiện */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 30px 15px;
+    }
+    .login-box h2 {
+        font-size: 22px;
+    }
+    .login-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+
+
+
+/* .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #b40606;
+}
+
+.login-box {
+    background: white;
+    padding: 40px 20px;
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-box input {
+    width: 320px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    background: linear-gradient(135deg, #8e44ad, #b40606);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-box button:hover {
+    background: linear-gradient(135deg, #b40606, #8e44ad);
+}
+
+.login-box p {
+    font-size: 14px;
+}
+
+.login-box a {
+    color: #8e44ad;
+    text-decoration: none;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+} */
